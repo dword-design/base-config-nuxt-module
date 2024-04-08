@@ -1,0 +1,38 @@
+{
+  "name": "@dword-design/base-config-nuxt-module",
+  "version": "1.0.0",
+  "repository": "dword-design/base-config-nuxt-module",
+  "funding": "https://github.com/sponsors/dword-design",
+  "license": "MIT",
+  "author": "Sebastian Landwehr <info@sebastianlandwehr.com>",
+  "type": "module",
+  "exports": "./dist/index.js",
+  "main": "dist/index.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "checkUnknownFiles": "base checkUnknownFiles",
+    "commit": "base commit",
+    "depcheck": "base depcheck",
+    "dev": "base dev",
+    "lint": "base lint",
+    "prepare": "base prepare",
+    "prepublishOnly": "base prepublishOnly",
+    "test": "base test"
+  },
+  "dependencies": {
+    "@dword-design/base-config-node": "^3.0.0",
+    "dedent": "^1.5.1",
+    "load-pkg": "npm:@dword-design/load-pkg"
+  },
+  "devDependencies": {
+    "@dword-design/base": "^11.0.11"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

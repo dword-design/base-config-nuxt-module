@@ -1,10 +1,9 @@
-import nodeConfig from '@dword-design/base-config-node'
-import dedent from 'dedent'
-import loadPkg from 'load-pkg'
+import nodeConfig from '@dword-design/base-config-node';
+import dedent from 'dedent';
+import loadPkg from 'load-pkg';
 
 export default config => {
-  const packageConfig = loadPkg.sync()
-
+  const packageConfig = loadPkg.sync();
   return {
     ...nodeConfig(config),
     readmeInstallString: dedent`
@@ -18,5 +17,5 @@ export default config => {
       $ yarn nuxi module add ${packageConfig.name}
       \`\`\`
     `,
-  }
-}
+  };
+};

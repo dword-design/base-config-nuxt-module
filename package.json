@@ -27,7 +27,7 @@
     "load-pkg": "npm:@dword-design/load-pkg"
   },
   "devDependencies": {
-    "@dword-design/base": "^11.0.11"
+    "@dword-design/base": "^12.0.0"
   },
   "engines": {
     "node": ">=18"

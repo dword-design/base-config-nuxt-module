@@ -11,7 +11,7 @@ export default config => {
       import { createConfigForNuxt } from '${packageName`@nuxt/eslint-config`}/flat';
       import config from '@dword-design/eslint-config';
 
-      export default createConfigForNuxt()
+      export default createConfigForNuxt({ features: { standalone: false } })
         .prepend(
           config,
           {

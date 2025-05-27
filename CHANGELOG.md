@@ -1,3 +1,10 @@
+## [1.0.3](https://github.com/dword-design/base-config-nuxt-module/compare/v1.0.2...v1.0.3) (2025-05-27)
+
+
+### Bug Fixes
+
+* foo ([d4784f9](https://github.com/dword-design/base-config-nuxt-module/commit/d4784f976fc1dcbe62b5de7cb5b8529d38395eec))
+
 ## [1.0.2](https://github.com/dword-design/base-config-nuxt-module/compare/v1.0.1...v1.0.2) (2025-05-26)
 
 

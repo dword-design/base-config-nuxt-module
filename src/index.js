@@ -5,7 +5,7 @@ import loadPkg from 'load-pkg';
 
 export default config => {
   const packageConfig = loadPkg.sync();
-  const virtualImports = ['#imports', ...config.virtualImports ?? []];
+  const virtualImports = ['#imports', ...(config.virtualImports ?? [])];
   return {
     ...nodeConfig(config),
     eslintConfig: dedent`

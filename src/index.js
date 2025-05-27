@@ -11,6 +11,7 @@ export default config => {
     eslintConfig: dedent`
       import { createConfigForNuxt } from '${packageName`@nuxt/eslint-config`}/flat';
       import config from '@dword-design/eslint-config';
+      import { globalIgnores } from "eslint/config";
 
       export default createConfigForNuxt({ features: { standalone: false } })
         .prepend(
@@ -20,10 +21,7 @@ export default config => {
               'import/no-unresolved': ["error", { ignore: [${virtualImports.map(_import => `'${_import}'`).join(', ')}] }],
             },
           },
-          {
-            files: ['eslint.config.js'],
-            rules: { 'import/no-extraneous-dependencies': 'off' },
-          },
+          globalIgnores(['eslint.config.js']),
         );\n
     `,
     readmeInstallString: dedent`

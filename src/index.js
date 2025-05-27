@@ -5,6 +5,7 @@ import loadPkg from 'load-pkg';
 
 export default config => {
   const packageConfig = loadPkg.sync();
+  const virtualImports = ['#imports', ...config.virtualImports ?? []];
   return {
     ...nodeConfig(config),
     eslintConfig: dedent`
@@ -14,6 +15,11 @@ export default config => {
       export default createConfigForNuxt({ features: { standalone: false } })
         .prepend(
           config,
+          {
+            rules: {
+              'import/no-unresolved': ["error", { ignore: [${virtualImports.map(_import => `'${_import}'`).join(', ')}] }],
+            },
+          },
           {
             files: ['eslint.config.js'],
             rules: { 'import/no-extraneous-dependencies': 'off' },

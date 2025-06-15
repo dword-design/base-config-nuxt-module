@@ -1,3 +1,10 @@
+## [2.0.1](https://github.com/dword-design/base-config-nuxt-module/compare/v2.0.0...v2.0.1) (2025-06-15)
+
+
+### Bug Fixes
+
+* make nuxt prod dependency ([a92297c](https://github.com/dword-design/base-config-nuxt-module/commit/a92297c0c1d772bb0edc5393674a44cba147adee))
+
 # [2.0.0](https://github.com/dword-design/base-config-nuxt-module/compare/v1.0.4...v2.0.0) (2025-06-15)
 
 

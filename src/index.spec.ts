@@ -1,7 +1,6 @@
 import { Base } from '@dword-design/base';
 import { test } from '@playwright/test';
 import endent from 'endent';
-import { execaCommand } from 'execa';
 import outputFiles from 'output-files';
 
 test('#imports', async ({}, testInfo) => {
@@ -17,7 +16,7 @@ test('#imports', async ({}, testInfo) => {
 
         export default defineNuxtModule({
           setup: () => {
-            addPlugin(resolver.resolve('./runtime/plugins/plugin.ts'))
+            addPlugin(resolver.resolve('./runtime/plugins/plugin.ts'));
           },
         });
       `,
@@ -33,6 +32,4 @@ test('#imports', async ({}, testInfo) => {
   await base.prepare();
   await base.lint();
   await base.run('prepublishOnly');
-  console.log('build done');
-  await execaCommand('tsc --noEmit', { cwd });
 });

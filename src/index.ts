@@ -1,6 +1,8 @@
 import pathLib from 'node:path';
 
-import getNodeConfig, { getPackageConfig } from '@dword-design/base-config-node';
+import getNodeConfig, {
+  getPackageConfig,
+} from '@dword-design/base-config-node';
 import packageName from 'depcheck-package-name';
 import endent from 'endent';
 import { execaCommand } from 'execa';
@@ -32,6 +34,7 @@ export default function (config) {
         );\n
     `,
     gitignore: [...nodeConfig.gitignore, '/.nuxt'],
+    hasTypescriptConfigRootAlias: false,
     lint: async options => {
       options = {
         log: process.env.NODE_ENV !== 'test',
@@ -56,6 +59,10 @@ export default function (config) {
         JSON.stringify(tsconfig, undefined, 2),
       );
     },
+    packageConfig: getPackageConfig({
+      cwd: this.cwd,
+      mainFilename: 'module.ts',
+    }),
     readmeInstallString: endent`
       ## Install
 
@@ -68,6 +75,5 @@ export default function (config) {
       \`\`\`
     `,
     typescriptConfig: { extends: './.nuxt/tsconfig.json' },
-    packageConfig: getPackageConfig({ cwd: this.cwd, mainFilename: 'module.ts' }),
   };
 }

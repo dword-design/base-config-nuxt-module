@@ -37,12 +37,12 @@
     "execa": "^9.6.0",
     "fs-extra": "^11.3.0",
     "load-pkg": "npm:@dword-design/load-pkg@^4.0.0",
-    "lodash-es": "^4.17.21"
+    "lodash-es": "^4.17.21",
+    "nuxt": "^3.17.5"
   },
   "devDependencies": {
     "@dword-design/base": "^13.0.6",
     "@playwright/test": "^1.53.0",
-    "nuxt": "^3.17.5",
     "output-files": "^2.0.32",
     "playwright": "^1.53.0"
   },

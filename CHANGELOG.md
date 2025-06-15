@@ -1,3 +1,15 @@
+# [2.0.0](https://github.com/dword-design/base-config-nuxt-module/compare/v1.0.4...v2.0.0) (2025-06-15)
+
+
+### Bug Fixes
+
+* lock file maintenance ([#13](https://github.com/dword-design/base-config-nuxt-module/issues/13)) ([260a76a](https://github.com/dword-design/base-config-nuxt-module/commit/260a76a009dd68de26e50ae4cbe034ac8c2a059c))
+
+
+### BREAKING CHANGES
+
+* typescript
+
 ## [1.0.4](https://github.com/dword-design/base-config-nuxt-module/compare/v1.0.3...v1.0.4) (2025-05-27)
 
 

@@ -41,7 +41,7 @@
     "nuxt": "^3.17.5"
   },
   "devDependencies": {
-    "@dword-design/base": "^13.0.6",
+    "@dword-design/base": "^14.0.0",
     "@playwright/test": "^1.53.0",
     "output-files": "^2.0.32",
     "playwright": "^1.53.0"

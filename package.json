@@ -29,7 +29,7 @@
     "test": "base test"
   },
   "dependencies": {
-    "@dword-design/base-config-node": "^3.0.15",
+    "@dword-design/base-config-node": "^4.0.0",
     "@nuxt/eslint-config": "^1.4.1",
     "@nuxt/module-builder": "^1.0.1",
     "depcheck-package-name": "^3.0.1",

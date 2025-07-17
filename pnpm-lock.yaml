@@ -18,8 +18,8 @@ importers:
         specifier: ^1.0.1
         version: 1.0.1(@nuxt/cli@3.25.1(magicast@0.3.5))(@vue/compiler-core@3.5.16)(esbuild@0.25.5)(typescript@5.8.3)(vue-tsc@2.2.10(typescript@5.8.3))(vue@3.5.16(typescript@5.8.3))
       depcheck-package-name:
-        specifier: ^3.0.1
-        version: 3.0.1
+        specifier: ^4.0.0
+        version: 4.0.0
       endent:
         specifier: npm:@dword-design/endent@^1.4.1
         version: '@dword-design/endent@1.4.1'
@@ -2435,6 +2435,10 @@ packages:
   depcheck-package-name@3.0.1:
     resolution: {integrity: sha512-7rR+VPs0wZCOgAyNe4klyXc+93cXl62pQ4akwHcnQQypdqDC18cy3LNLXmgu8geb3on8pgcxOhfbQ66+yLaNoQ==}
     engines: {node: '>=14'}
+
+  depcheck-package-name@4.0.0:
+    resolution: {integrity: sha512-/TtBVQmTZB0fOew8FElr9xsyff+2QTRUW+6lV5HPAKh/QFeoJeBlm7Bon+iIW4v/drfqAdoe91s6KCkQhOa3yw==}
+    engines: {node: '>=20'}
 
   depd@2.0.0:
     resolution: {integrity: sha512-g7nH6P6dyDioJogAAGprGpCtVImJhpPk/roCzdb3fIh61/s/nPsfR6onyMwkCAR/OlC3yBC0lESvUoQEAssIrw==}
@@ -9183,6 +9187,10 @@ snapshots:
   depcheck-detector-package-name@3.0.4: {}
 
   depcheck-package-name@3.0.1:
+    dependencies:
+      tagged-template-noop: 2.1.1
+
+  depcheck-package-name@4.0.0:
     dependencies:
       tagged-template-noop: 2.1.1
 

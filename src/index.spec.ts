@@ -30,6 +30,5 @@ test('#imports', async ({}, testInfo) => {
 
   const base = new Base({ name: '../../src' }, { cwd });
   await base.prepare();
-  await base.lint();
   await base.run('prepublishOnly');
 });

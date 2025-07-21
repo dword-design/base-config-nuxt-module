@@ -26,29 +26,31 @@
     "lint": "base lint",
     "prepare": "base prepare",
     "prepublishOnly": "base prepublishOnly",
-    "test": "base test"
+    "test": "base test",
+    "typecheck": "base typecheck",
+    "verify": "base verify"
   },
   "dependencies": {
-    "@dword-design/base-config-node": "^3.0.15",
-    "@nuxt/eslint-config": "^1.4.1",
+    "@dword-design/base-config-node": "^4.0.0",
+    "@nuxt/eslint-config": "^1.6.0",
     "@nuxt/module-builder": "^1.0.1",
-    "depcheck-package-name": "^3.0.1",
-    "endent": "npm:@dword-design/endent@^1.4.1",
+    "depcheck-package-name": "^4.0.0",
+    "endent": "npm:@dword-design/endent@^1.4.7",
     "execa": "^9.6.0",
     "fs-extra": "^11.3.0",
     "load-pkg": "npm:@dword-design/load-pkg@^4.0.0",
     "lodash-es": "^4.17.21",
-    "nuxt": "^3.17.5"
+    "nuxt": "^3.17.7"
   },
   "devDependencies": {
-    "@dword-design/base": "^13.0.6",
-    "@playwright/test": "^1.53.0",
-    "output-files": "^2.0.32",
-    "playwright": "^1.53.0"
+    "@dword-design/base": "^15.1.2",
+    "@playwright/test": "^1.54.1",
+    "output-files": "^3.0.0",
+    "playwright": "^1.54.1"
   },
   "packageManager": "pnpm@10.11.0+sha512.6540583f41cc5f628eb3d9773ecee802f4f9ef9923cc45b69890fb47991d4b092964694ec3a4f738a420c918a333062c8b925d312f42e4f0c263eb603551f977",
   "engines": {
-    "node": ">=18"
+    "node": ">=20"
   },
   "publishConfig": {
     "access": "public"

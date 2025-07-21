@@ -48,15 +48,20 @@ export default function (config) {
         stderr: options.stderr,
       });
 
-      let tsconfig = await fs.readJson(
+      const tsconfig = await fs.readJson(
+        pathLib.join(this.cwd, 'tsconfig.json'),
+      );
+
+      let nuxtTsconfig = await fs.readJson(
         pathLib.join(this.cwd, '.nuxt', 'tsconfig.json'),
       );
 
-      tsconfig = omit(tsconfig, ['compilerOptions.noEmit']);
+      nuxtTsconfig = omit(nuxtTsconfig, ['compilerOptions.noEmit']);
+      nuxtTsconfig.compilerOptions.strict = !!tsconfig.compilerOptions.strict;
 
       await fs.outputFile(
         pathLib.join(this.cwd, '.nuxt', 'tsconfig.json'),
-        JSON.stringify(tsconfig, undefined, 2),
+        JSON.stringify(nuxtTsconfig, undefined, 2),
       );
     },
     packageConfig: getPackageConfig({

@@ -1,3 +1,10 @@
+## [3.0.1](https://github.com/dword-design/base-config-nuxt-module/compare/v3.0.0...v3.0.1) (2025-07-21)
+
+
+### Bug Fixes
+
+* update pnpm to v10.13.1 ([#14](https://github.com/dword-design/base-config-nuxt-module/issues/14)) ([b6a7a20](https://github.com/dword-design/base-config-nuxt-module/commit/b6a7a20906abdb79025c707c07a9c56f01d2a740))
+
 # [3.0.0](https://github.com/dword-design/base-config-nuxt-module/compare/v2.0.1...v3.0.0) (2025-07-21)
 
 

@@ -1,3 +1,10 @@
+## [3.0.4](https://github.com/dword-design/base-config-nuxt-module/compare/v3.0.3...v3.0.4) (2025-11-15)
+
+
+### Bug Fixes
+
+* convert eslint flat config composer to config ([b9b7f44](https://github.com/dword-design/base-config-nuxt-module/commit/b9b7f444f6bec415f806b27ed5fc26b32cf1bd7a))
+
 ## [3.0.3](https://github.com/dword-design/base-config-nuxt-module/compare/v3.0.2...v3.0.3) (2025-11-15)
 
 

@@ -1,3 +1,10 @@
+## [3.0.2](https://github.com/dword-design/base-config-nuxt-module/compare/v3.0.1...v3.0.2) (2025-11-15)
+
+
+### Bug Fixes
+
+* ignore lint-staged eslint config ([c3e6d67](https://github.com/dword-design/base-config-nuxt-module/commit/c3e6d67de2b2b2f64c87ee683e8079c08ad5051b))
+
 ## [3.0.1](https://github.com/dword-design/base-config-nuxt-module/compare/v3.0.0...v3.0.1) (2025-07-21)
 
 

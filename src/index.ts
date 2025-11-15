@@ -1,5 +1,11 @@
 import pathLib from 'node:path';
 
+import {
+  type Base,
+  type Config,
+  defineBaseConfig,
+  type PartialCommandOptions,
+} from '@dword-design/base';
 import getNodeConfig, {
   getPackageConfig,
 } from '@dword-design/base-config-node';
@@ -7,13 +13,15 @@ import packageName from 'depcheck-package-name';
 import endent from 'endent';
 import { execaCommand } from 'execa';
 import fs from 'fs-extra';
-import loadPkg from 'load-pkg';
 import { omit } from 'lodash-es';
+import { readPackageSync } from 'read-pkg';
 
-export default function (config) {
-  const packageConfig = loadPkg.sync(this.cwd);
+type ConfigNuxt = Config & { virtualImports?: string[] };
+
+export default defineBaseConfig(function (this: Base, config: ConfigNuxt) {
+  const packageConfig = readPackageSync({ cwd: this.cwd });
   const virtualImports = ['#imports', ...(config.virtualImports ?? [])];
-  const nodeConfig = getNodeConfig.call(this, config);
+  const nodeConfig = getNodeConfig.call(this);
   return {
     ...nodeConfig,
     editorIgnore: [...nodeConfig.editorIgnore, '.nuxt'],
@@ -35,7 +43,7 @@ export default function (config) {
     `,
     gitignore: [...nodeConfig.gitignore, '/.nuxt'],
     hasTypescriptConfigRootAlias: false,
-    lint: async options => {
+    lint: async (options: PartialCommandOptions = {}) => {
       options = {
         log: process.env.NODE_ENV !== 'test',
         stderr: 'inherit',
@@ -81,4 +89,4 @@ export default function (config) {
     `,
     typescriptConfig: { extends: './.nuxt/tsconfig.json' },
   };
-}
+});

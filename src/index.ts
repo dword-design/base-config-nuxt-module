@@ -30,7 +30,7 @@ export default function (config) {
               'import-x/no-unresolved': ["error", { ignore: [${virtualImports.map(_import => `'${_import}'`).join(', ')}] }],
             },
           },
-          globalIgnores(['eslint.config.ts']),
+          globalIgnores(['eslint.config.ts', 'eslint.lint-staged.config.ts']),
         );\n
     `,
     gitignore: [...nodeConfig.gitignore, '/.nuxt'],

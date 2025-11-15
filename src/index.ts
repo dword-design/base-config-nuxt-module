@@ -33,7 +33,7 @@ export default defineBaseConfig(function (
       import config from '@dword-design/eslint-config';
       import { globalIgnores } from "eslint/config";
 
-      export default createConfigForNuxt({ features: { standalone: false } })
+      export default await createConfigForNuxt({ features: { standalone: false } })
         .prepend(
           config,
           {
@@ -42,7 +42,8 @@ export default defineBaseConfig(function (
             },
           },
           globalIgnores(['eslint.config.ts', 'eslint.lint-staged.config.ts']),
-        );\n
+        )
+        .toConfigs();\n
     `,
     gitignore: [...nodeConfig.gitignore, '/.nuxt'],
     hasTypescriptConfigRootAlias: false,

@@ -16,9 +16,12 @@ import fs from 'fs-extra';
 import { omit } from 'lodash-es';
 import { readPackageSync } from 'read-pkg';
 
-type ConfigNuxt = Config & { virtualImports?: string[] };
+type ConfigNuxtModule = Config & { virtualImports?: string[] };
 
-export default defineBaseConfig(function (this: Base, config: ConfigNuxt) {
+export default defineBaseConfig(function (
+  this: Base,
+  config: ConfigNuxtModule,
+) {
   const packageConfig = readPackageSync({ cwd: this.cwd });
   const virtualImports = ['#imports', ...(config.virtualImports ?? [])];
   const nodeConfig = getNodeConfig.call(this);

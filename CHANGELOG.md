@@ -1,3 +1,10 @@
+## [3.0.5](https://github.com/dword-design/base-config-nuxt-module/compare/v3.0.4...v3.0.5) (2025-11-15)
+
+
+### Bug Fixes
+
+* fix typescript error ([1425ea7](https://github.com/dword-design/base-config-nuxt-module/commit/1425ea77876be3736481310cce91ec94d51916e4))
+
 ## [3.0.4](https://github.com/dword-design/base-config-nuxt-module/compare/v3.0.3...v3.0.4) (2025-11-15)
 
 

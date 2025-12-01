@@ -30,7 +30,7 @@
   },
   "dependencies": {
     "@dword-design/base": "^15.1.2",
-    "@dword-design/base-config-node": "^4.0.4",
+    "@dword-design/base-config-node": "^5.0.0",
     "@nuxt/eslint-config": "^1.6.0",
     "@nuxt/module-builder": "^1.0.1",
     "depcheck-package-name": "^4.0.0",

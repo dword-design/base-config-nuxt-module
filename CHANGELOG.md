@@ -1,3 +1,16 @@
+# [4.0.0](https://github.com/dword-design/base-config-nuxt-module/compare/v3.0.5...v4.0.0) (2025-12-03)
+
+
+### Bug Fixes
+
+* trigger release ([882ae49](https://github.com/dword-design/base-config-nuxt-module/commit/882ae49c0b1af4c69fa9e87f6283e0635fb793e3))
+* update dependency @dword-design/base to v16 ([#28](https://github.com/dword-design/base-config-nuxt-module/issues/28)) ([4e99eb1](https://github.com/dword-design/base-config-nuxt-module/commit/4e99eb1e6d90198e202867a6b42524c82d5d4643))
+
+
+### BREAKING CHANGES
+
+* node >= 22
+
 ## [3.0.5](https://github.com/dword-design/base-config-nuxt-module/compare/v3.0.4...v3.0.5) (2025-11-15)
 
 

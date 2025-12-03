@@ -1,3 +1,16 @@
+# [5.0.0](https://github.com/dword-design/base-config-nuxt-module/compare/v4.0.0...v5.0.0) (2025-12-03)
+
+
+### Bug Fixes
+
+* update dependency nuxt to v4 ([#21](https://github.com/dword-design/base-config-nuxt-module/issues/21)) ([04fe862](https://github.com/dword-design/base-config-nuxt-module/commit/04fe8627921cca7003e4f35dbd612e39ba4a99ec))
+* update pnpm to v10.24.0 ([#25](https://github.com/dword-design/base-config-nuxt-module/issues/25)) ([13b89ec](https://github.com/dword-design/base-config-nuxt-module/commit/13b89ecee8eb081e65e90b6ebb98ea14ea3d9fc9))
+
+
+### BREAKING CHANGES
+
+* nuxt 4
+
 # [4.0.0](https://github.com/dword-design/base-config-nuxt-module/compare/v3.0.5...v4.0.0) (2025-12-03)
 
 

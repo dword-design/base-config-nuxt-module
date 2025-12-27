@@ -14,6 +14,9 @@ importers:
       '@dword-design/base-config-node':
         specifier: ^5.0.1
         version: 5.0.2(@types/node@24.10.1)(@typescript-eslint/parser@8.48.1(eslint@9.39.1(jiti@2.6.1))(typescript@5.9.3))(@typescript-eslint/utils@8.48.1(eslint@9.39.1(jiti@2.6.1))(typescript@5.9.3))(@vue/compiler-core@3.5.25)(esbuild@0.27.1)
+      '@dword-design/dotenv-json-extended':
+        specifier: ^4.0.1
+        version: 4.0.1
       '@nuxt/eslint-config':
         specifier: ^1.11.0
         version: 1.11.0(@typescript-eslint/utils@8.48.1(eslint@9.39.1(jiti@2.6.1))(typescript@5.9.3))(@vue/compiler-sfc@3.5.25)(eslint@9.39.1(jiti@2.6.1))(typescript@5.9.3)
@@ -340,6 +343,7 @@ packages:
   '@dword-design/defu@1.0.3':
     resolution: {integrity: sha512-QEM8a6CPIrMvudnuNDwr3IxWJ0dcMKG9tgxt3zuPk/NmXV0ejk4qxQJ1PfquJwRzu59UsqNpUAACMG485VMIUA==}
     engines: {node: '>=18'}
+    deprecated: Package no longer supported. Contact Support at https://www.npmjs.com/support for more info.
 
   '@dword-design/depcheck-parser-sass@5.0.0':
     resolution: {integrity: sha512-WXVEIWxgS3G4kXhb1IgU9i+cJO7kkx6qAwibeqsnjzuFQaIfzQlHvbPyoU3DPc6SvRYREQdzNB1CFg9MC79abw==}

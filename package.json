@@ -31,6 +31,7 @@
   "dependencies": {
     "@dword-design/base": "^16.1.0",
     "@dword-design/base-config-node": "^5.0.1",
+    "@dword-design/dotenv-json-extended": "^4.0.1",
     "@nuxt/eslint-config": "^1.11.0",
     "@nuxt/module-builder": "^1.0.2",
     "depcheck-package-name": "^4.0.1",

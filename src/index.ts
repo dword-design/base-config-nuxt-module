@@ -1,5 +1,3 @@
-import pathLib from 'node:path';
-
 import {
   type Base,
   type Config,
@@ -9,11 +7,10 @@ import {
 import getNodeConfig, {
   getPackageConfig,
 } from '@dword-design/base-config-node';
+import dotenv from '@dword-design/dotenv-json-extended';
 import packageName from 'depcheck-package-name';
 import endent from 'endent';
 import { execaCommand } from 'execa';
-import fs from 'fs-extra';
-import { omit } from 'lodash-es';
 import { readPackageSync } from 'read-pkg';
 
 type ConfigNuxtModule = Config & { virtualImports?: string[] };
@@ -64,24 +61,9 @@ export default defineBaseConfig(function (
       await execaCommand('nuxt-build-module prepare', {
         ...(options.log && { stdout: 'inherit' }),
         cwd: this.cwd,
+        env: dotenv.parse({ cwd: this.cwd }),
         stderr: options.stderr,
       });
-
-      const tsconfig = await fs.readJson(
-        pathLib.join(this.cwd, 'tsconfig.json'),
-      );
-
-      let nuxtTsconfig = await fs.readJson(
-        pathLib.join(this.cwd, '.nuxt', 'tsconfig.json'),
-      );
-
-      nuxtTsconfig = omit(nuxtTsconfig, ['compilerOptions.noEmit']);
-      nuxtTsconfig.compilerOptions.strict = !!tsconfig.compilerOptions.strict;
-
-      await fs.outputFile(
-        pathLib.join(this.cwd, '.nuxt', 'tsconfig.json'),
-        JSON.stringify(nuxtTsconfig, undefined, 2),
-      );
     },
     packageConfig: getPackageConfig({
       cwd: this.cwd,
@@ -98,6 +80,20 @@ export default defineBaseConfig(function (
       $ yarn nuxi module add ${packageConfig.name}
       \`\`\`
     `,
+    typecheck: async (options: PartialCommandOptions = {}) => {
+      options = {
+        log: process.env.NODE_ENV !== 'test',
+        stderr: 'inherit',
+        ...options,
+      };
+
+      await execaCommand('nuxt-build-module prepare', {
+        ...(options.log && { stdout: 'inherit' }),
+        cwd: this.cwd,
+        env: dotenv.parse({ cwd: this.cwd }),
+        stderr: options.stderr,
+      });
+    },
     typescriptConfig: { extends: './.nuxt/tsconfig.json' },
   };
 });

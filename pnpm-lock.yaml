@@ -24,8 +24,8 @@ importers:
         specifier: ^1.0.2
         version: 1.0.2(@nuxt/cli@3.31.3(cac@6.7.14)(magicast@0.5.1))(@vue/compiler-core@3.5.26)(esbuild@0.27.2)(sass@1.97.1)(typescript@5.9.3)(vue-tsc@3.2.1(typescript@5.9.3))(vue@3.5.26(typescript@5.9.3))
       depcheck-package-name:
-        specifier: ^4.0.1
-        version: 4.0.1
+        specifier: ^5.0.0
+        version: 5.0.0
       endent:
         specifier: npm:@dword-design/endent@^1.4.7
         version: '@dword-design/endent@1.4.7'

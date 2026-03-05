@@ -34,7 +34,7 @@
     "@dword-design/dotenv-json-extended": "^4.0.1",
     "@nuxt/eslint-config": "^1.11.0",
     "@nuxt/module-builder": "^1.0.2",
-    "depcheck-package-name": "^4.0.1",
+    "depcheck-package-name": "^5.0.0",
     "endent": "npm:@dword-design/endent@^1.4.7",
     "execa": "^9.6.1",
     "nuxt": "^4.0.0",

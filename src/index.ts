@@ -94,6 +94,14 @@ export default defineBaseConfig(function (
         stderr: options.stderr,
       });
     },
-    typescriptConfig: { extends: './.nuxt/tsconfig.json' },
+    typescriptConfig: {
+      files: [],
+      references: [
+        { path: './.nuxt/tsconfig.app.json' },
+        { path: './.nuxt/tsconfig.server.json' },
+        { path: './.nuxt/tsconfig.shared.json' },
+        { path: './.nuxt/tsconfig.node.json' },
+      ],
+    },
   };
 });

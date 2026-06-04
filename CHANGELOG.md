@@ -1,3 +1,10 @@
+## [5.0.3](https://github.com/dword-design/base-config-nuxt-module/compare/v5.0.2...v5.0.3) (2026-06-04)
+
+
+### Bug Fixes
+
+* use module builder fork ([73c42d1](https://github.com/dword-design/base-config-nuxt-module/commit/73c42d1ab2dcf52cf67df9ab734bba82d4dd0b51))
+
 ## [5.0.2](https://github.com/dword-design/base-config-nuxt-module/compare/v5.0.1...v5.0.2) (2026-06-04)
 
 

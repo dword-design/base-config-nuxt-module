@@ -15,8 +15,8 @@ importers:
         specifier: ^5.0.1
         version: 5.0.3(@types/node@25.0.3)(@typescript-eslint/parser@8.51.0(eslint@9.39.2(jiti@2.7.0))(typescript@5.9.3))(@typescript-eslint/utils@8.51.0(eslint@9.39.2(jiti@2.7.0))(typescript@5.9.3))(@vue/compiler-core@3.5.26)(esbuild@0.27.2)(sass@1.97.1)
       '@dword-design/dotenv-json-extended':
-        specifier: ^4.0.1
-        version: 4.0.1
+        specifier: ^5.0.0
+        version: 5.3.0
       '@nuxt/eslint-config':
         specifier: ^1.11.0
         version: 1.12.1(@typescript-eslint/utils@8.51.0(eslint@9.39.2(jiti@2.7.0))(typescript@5.9.3))(@vue/compiler-sfc@3.5.26)(eslint@9.39.2(jiti@2.7.0))(typescript@5.9.3)
@@ -340,6 +340,10 @@ packages:
     resolution: {integrity: sha512-iijlHpWcBuohXc2w85FyH++IX4myR0Vzw3UGFv7ofKxKIXr+RSGtbpF/7RjYwu0nfCKsFtcjWbFcJryEL4yfSg==}
     engines: {node: '>=22'}
 
+  '@dword-design/defaults@1.1.8':
+    resolution: {integrity: sha512-66Ubh9RjKyb/0/myYNFqzXzkowM0zWy5ImTp/wR3u4KZf8ymI5BBOO/9+QyDz1uBLV1dZGskUVMxSDYgQRmAkw==}
+    engines: {node: '>=22'}
+
   '@dword-design/defu@1.0.3':
     resolution: {integrity: sha512-QEM8a6CPIrMvudnuNDwr3IxWJ0dcMKG9tgxt3zuPk/NmXV0ejk4qxQJ1PfquJwRzu59UsqNpUAACMG485VMIUA==}
     engines: {node: '>=18'}
@@ -357,6 +361,11 @@ packages:
   '@dword-design/dotenv-json-extended@4.0.1':
     resolution: {integrity: sha512-JB2DbRsdB/iJFD6mpvgeNk2Nz2gbqdA6w228pldHejqoEWgF8pS62W+/kahXP+WJY84F0+Mzi6FFjK+cSjIHYw==}
     engines: {node: '>=20'}
+
+  '@dword-design/dotenv-json-extended@5.3.0':
+    resolution: {integrity: sha512-vQnrNotNar3kdZML4DCylShSv154L9sF7Qxfax06reuFgCq7onlVjZYEHOje5xL/aSCPgDws7Eg54V+aOiPCsQ==}
+    engines: {node: '>=22'}
+    hasBin: true
 
   '@dword-design/endent@1.4.7':
     resolution: {integrity: sha512-yK1ivALMq9Eys6O9SgO+jBpRbQBLruFL2FvWMWPcoqiY1hPDHleY02Vir6jN6j7tDiMog3tjVtqKb4eWXdKo1w==}
@@ -2047,6 +2056,9 @@ packages:
   ajv@8.17.1:
     resolution: {integrity: sha512-B/gBuNg5SiMTrPkC+A2+cW0RszwxYmn6VYxB/inlBStS5nx6xHIt/ehKRhIMhqusl7a8LjQoZnjCs5vhwxOQ1g==}
 
+  ajv@8.20.0:
+    resolution: {integrity: sha512-Thbli+OlOj+iMPYFBVBfJ3OmCAnaSyNn4M1vz9T6Gka5Jt9ba/HIR56joy65tY6kx/FCF5VXNB819Y7/GUrBGA==}
+
   alien-signals@1.0.13:
     resolution: {integrity: sha512-OGj9yyTnJEttvzhTUWuscOvtqxq5vrhF7vL9oS0xJ2mK0ItPYP1/y+vCFebfxoEyAz0++1AIwJ5CMr+Fk3nDmg==}
 
@@ -2436,6 +2448,10 @@ packages:
 
   commander@14.0.2:
     resolution: {integrity: sha512-TywoWNNRbhoD0BXs1P3ZEScW8W5iKrnbithIl0YH+uCmBd0QpPOA8yc82DS3BIE5Ma6FnBVUsJ7wVUDz4dvOWQ==}
+    engines: {node: '>=20'}
+
+  commander@14.0.3:
+    resolution: {integrity: sha512-H+y0Jo/T1RZ9qPP4Eh1pkcQcLRglraJaSLoyOtHxu6AapkjWVCy2Sit1QQ4x3Dng8qDlSsZEet7g5Pq06MvTgw==}
     engines: {node: '>=20'}
 
   commander@2.20.3:
@@ -3319,6 +3335,10 @@ packages:
     resolution: {integrity: sha512-YyZM99iHrqLKjmt4LJDj58KI+fYyufRLBSYcqycxf//KpBk9FoewoGX0450m9nB44qrZnovzC2oeP5hUibxc/g==}
     engines: {node: '>=18'}
 
+  find-up@8.0.0:
+    resolution: {integrity: sha512-JGG8pvDi2C+JxidYdIwQDyS/CgcrIdh18cvgxcBge3wSHRQOrooMD3GlFBcmMJAN9M42SAZjDp5zv1dglJjwww==}
+    engines: {node: '>=20'}
+
   find-versions@6.0.0:
     resolution: {integrity: sha512-2kCCtc+JvcZ86IGAz3Z2Y0A1baIz9fL31pH/0S1IqZr9Iwnjq8izfPtrCyQKO6TLMPELLsQMre7VDqeIKCsHkA==}
     engines: {node: '>=18'}
@@ -4056,8 +4076,15 @@ packages:
     resolution: {integrity: sha512-gvVijfZvn7R+2qyPX8mAuKcFGDf6Nc61GdvGafQsHL0sBIxfKzA+usWn4GFC/bk+QdwPUD4kWFJLhElipq+0VA==}
     engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
 
+  locate-path@8.0.0:
+    resolution: {integrity: sha512-XT9ewWAC43tiAV7xDAPflMkG0qOPn2QjHqlgX8FOqmWa/rxnyYDulF9T0F7tRy1u+TVTmK/M//6VIOye+2zDXg==}
+    engines: {node: '>=20'}
+
   lodash-es@4.17.22:
     resolution: {integrity: sha512-XEawp1t0gxSi9x01glktRZ5HDy0HXqrM0x5pXQM98EaI0NxO6jVM7omDOxsuEo5UIASAnm2bRp1Jt/e0a2XU8Q==}
+
+  lodash-es@4.18.1:
+    resolution: {integrity: sha512-J8xewKD/Gk22OZbhpOVSwcs60zhd95ESDwezOFuA3/099925PdHJ7OFHNTGtajL3AlZkykD32HykiMo+BIBI8A==}
 
   lodash.camelcase@4.3.0:
     resolution: {integrity: sha512-TwuEnCnxbc3rAvhf/LbG7tJUDzhqXyFnv3dtzLOPgCG/hODL7WFnsbwktkD7yUV0RrreP/l1PALq/YSg6VvjlA==}
@@ -4166,6 +4193,10 @@ packages:
     resolution: {integrity: sha512-h+kzzkOlv7hFf9c4c6MhrFRix+ii1NNFaTyQJbR4aol84hFeepgicTlJLEfkFKGAIjlFbfNM1pL3iWK1aIRtRQ==}
     engines: {node: '>=18'}
 
+  make-cli@6.0.2:
+    resolution: {integrity: sha512-TGXzhbItokIn9reaq7a9jaAoj4qI114+jJKjUip6DfBxdaZGy9posl2YRFZmM/FNvPq2Cl0ieWrmevdwCA7RNA==}
+    engines: {node: '>=22'}
+
   make-dir@4.0.0:
     resolution: {integrity: sha512-hXdUTZYIVOt1Ex//jAQi+wTZZpUpwBj/0QsOzqegb3rGMMeJiSEu5xLHnYfBrRV4RH2+OCSOO95Is/7x1WJ4bw==}
     engines: {node: '>=10'}
@@ -4181,6 +4212,10 @@ packages:
   map-obj@5.0.2:
     resolution: {integrity: sha512-K6K2NgKnTXimT3779/4KxSvobxOtMmx1LBZ3NwRxT/MDIR3Br/fQ4Q+WCX5QxjyUR8zg5+RV9Tbf2c5pAWTD2A==}
     engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
+
+  map-obj@6.0.0:
+    resolution: {integrity: sha512-PwDvwt/tK70+luLw5k9ySLtzLAzwf7tZTY9GBj63Y010nHRPjwHcQTpTd5JwQqITC2ty7prtxBo71iwyYY0TAg==}
+    engines: {node: '>=20'}
 
   marked-terminal@7.3.0:
     resolution: {integrity: sha512-t4rBvPsHc57uE/2nJOLmMbZCQ4tgAccAED3ngXQqW6g+TxA488JzJ+FK3lQkzBQOI1mRV/r/Kq+1ZlJ4D0owQw==}
@@ -5859,6 +5894,10 @@ packages:
     resolution: {integrity: sha512-VCn+LMHbd4t6sF3wfU/+HKT63C9OoyrSIf4b+vtWHpt2U7/4InZG467YDNMFMR70DdHjAdpPWmw2lzRdg0Xqqg==}
     engines: {node: '>=20'}
 
+  type-fest@5.7.0:
+    resolution: {integrity: sha512-1URUxUqfHFM1c+zfSPsa3gnkO7Aq21qyH75SIduNYz4SzY964rn1X2vCMQaHSHhktiw+0kPa2iyb6PUpXqB6Vg==}
+    engines: {node: '>=20'}
+
   type-level-regexp@0.1.17:
     resolution: {integrity: sha512-wTk4DH3cxwk196uGLK/E9pE45aLfeKJacKmcEgEOA/q5dnPGNxXt0cfYdFxb57L+sEpf1oJH4Dnx/pnRcku9jg==}
 
@@ -6438,7 +6477,6 @@ snapshots:
       '@babel/helper-validator-identifier': 7.29.7
       js-tokens: 4.0.0
       picocolors: 1.1.1
-    optional: true
 
   '@babel/compat-data@7.28.5': {}
 
@@ -6546,8 +6584,7 @@ snapshots:
 
   '@babel/helper-validator-identifier@7.28.5': {}
 
-  '@babel/helper-validator-identifier@7.29.7':
-    optional: true
+  '@babel/helper-validator-identifier@7.29.7': {}
 
   '@babel/helper-validator-option@7.27.1': {}
 
@@ -6589,7 +6626,7 @@ snapshots:
 
   '@babel/traverse@7.28.5':
     dependencies:
-      '@babel/code-frame': 7.27.1
+      '@babel/code-frame': 7.29.7
       '@babel/generator': 7.28.5
       '@babel/helper-globals': 7.28.0
       '@babel/parser': 7.28.5
@@ -6602,7 +6639,7 @@ snapshots:
   '@babel/types@7.28.5':
     dependencies:
       '@babel/helper-string-parser': 7.27.1
-      '@babel/helper-validator-identifier': 7.28.5
+      '@babel/helper-validator-identifier': 7.29.7
 
   '@bcoe/v8-coverage@1.0.2': {}
 
@@ -6913,6 +6950,12 @@ snapshots:
       is-plain-obj: 4.1.0
       lodash-es: 4.17.22
 
+  '@dword-design/defaults@1.1.8':
+    dependencies:
+      is-plain-obj: 4.1.0
+      lodash-es: 4.18.1
+      type-fest: 5.7.0
+
   '@dword-design/defu@1.0.3':
     dependencies:
       defu: 6.1.4
@@ -6959,6 +7002,16 @@ snapshots:
       find-up: 7.0.0
       fs-extra: 11.3.3
       map-obj: 5.0.2
+
+  '@dword-design/dotenv-json-extended@5.3.0':
+    dependencies:
+      ajv: 8.20.0
+      change-case: 5.4.4
+      execa: 9.6.1
+      find-up: 8.0.0
+      fs-extra: 11.3.3
+      make-cli: 6.0.2
+      map-obj: 6.0.0
 
   '@dword-design/endent@1.4.7':
     dependencies:
@@ -8625,7 +8678,7 @@ snapshots:
 
   '@vue/babel-plugin-resolve-type@2.0.1(@babel/core@7.28.5)':
     dependencies:
-      '@babel/code-frame': 7.27.1
+      '@babel/code-frame': 7.29.7
       '@babel/core': 7.28.5
       '@babel/helper-module-imports': 7.27.1
       '@babel/helper-plugin-utils': 7.27.1
@@ -8793,6 +8846,13 @@ snapshots:
       uri-js: 4.4.1
 
   ajv@8.17.1:
+    dependencies:
+      fast-deep-equal: 3.1.3
+      fast-uri: 3.1.0
+      json-schema-traverse: 1.0.0
+      require-from-string: 2.0.2
+
+  ajv@8.20.0:
     dependencies:
       fast-deep-equal: 3.1.3
       fast-uri: 3.1.0
@@ -9172,6 +9232,8 @@ snapshots:
   commander@12.1.0: {}
 
   commander@14.0.2: {}
+
+  commander@14.0.3: {}
 
   commander@2.20.3: {}
 
@@ -10171,6 +10233,11 @@ snapshots:
       path-exists: 5.0.0
       unicorn-magic: 0.1.0
 
+  find-up@8.0.0:
+    dependencies:
+      locate-path: 8.0.0
+      unicorn-magic: 0.3.0
+
   find-versions@6.0.0:
     dependencies:
       semver-regex: 4.0.5
@@ -10913,7 +10980,13 @@ snapshots:
     dependencies:
       p-locate: 6.0.0
 
+  locate-path@8.0.0:
+    dependencies:
+      p-locate: 6.0.0
+
   lodash-es@4.17.22: {}
+
+  lodash-es@4.18.1: {}
 
   lodash.camelcase@4.3.0: {}
 
@@ -11024,6 +11097,13 @@ snapshots:
       lodash-es: 4.17.22
       p-is-promise: 4.0.0
 
+  make-cli@6.0.2:
+    dependencies:
+      '@dword-design/defaults': 1.1.8
+      commander: 14.0.3
+      lodash-es: 4.18.1
+      p-is-promise: 4.0.0
+
   make-dir@4.0.0:
     dependencies:
       semver: 7.7.3
@@ -11033,6 +11113,8 @@ snapshots:
   map-obj@4.3.0: {}
 
   map-obj@5.0.2: {}
+
+  map-obj@6.0.0: {}
 
   marked-terminal@7.3.0(marked@15.0.12):
     dependencies:
@@ -12862,6 +12944,10 @@ snapshots:
   type-fest@4.41.0: {}
 
   type-fest@5.3.1:
+    dependencies:
+      tagged-tag: 1.0.0
+
+  type-fest@5.7.0:
     dependencies:
       tagged-tag: 1.0.0
 

@@ -36,7 +36,7 @@
     "@nuxt/module-builder": "npm:@dword-design/nuxt-module-builder-fork@^0.0.1",
     "depcheck-package-name": "^4.0.1",
     "endent": "npm:@dword-design/endent@^1.4.7",
-    "execa": "^9.6.1",
+    "execa": "^10.0.0",
     "nuxt": "^4.0.0",
     "read-pkg": "^10.0.0"
   },
